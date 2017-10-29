@@ -14,6 +14,7 @@ $.ajax( "./questions.txt" )
 
   $('#question').text(questions[randomQuestion]);
   $('#hiddenQuestion').val(questions[randomQuestion]);
+  $('#sendButton').prop( 'disabled', false );
 
 })
 .fail(function() {
